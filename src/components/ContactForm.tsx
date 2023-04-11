@@ -40,8 +40,8 @@ const ContactForm: FC<ContactFormProps> = ({  dispatch, dataToEdit, toggleModal}
     ) {
       setErrorMessage('All the fields are required.');
       return;
-    } else if (!phoneNumber.trim().match(/^\d{10}$/g)) {
-      setErrorMessage('Please enter a valid 10 digit phone number.');
+    } else if (phoneNumber.length < 3) {
+      setErrorMessage('Please enter a phone number with more than 3 numbers.');
       return;
     }
     if (!dataToEdit) {
