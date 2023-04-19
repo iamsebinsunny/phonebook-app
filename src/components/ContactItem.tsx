@@ -2,12 +2,17 @@ import React, { FC } from 'react';
 import { AiFillDelete, AiFillEdit } from 'react-icons/ai';
 import { Contact, Action } from '../types';
 
+// Define the extra props that are not part of the Contact interface
 interface ExtraProps {
   handleEdit: (id: number) => void;
- dispatch: React.Dispatch<Action>
+  dispatch: React.Dispatch<Action>;
 }
 
+// Use the FC type to define the props that the ContactItem component expects
 const ContactItem: FC<Contact & ExtraProps> = ({ id, firstName, lastName, phoneNumber, address, email, handleEdit, dispatch }) => {
+  // Use destructuring to extract the properties from the Contact object that was passed as a prop
+
+  // Render the table row with the contact information
   return (
     <tr>
       <td>{firstName}</td>
@@ -16,10 +21,19 @@ const ContactItem: FC<Contact & ExtraProps> = ({ id, firstName, lastName, phoneN
       <td>{email}</td>
       <td>{address}</td>
       <td>
-        <AiFillEdit size={20} onClick={() => handleEdit(id)} color='blue' className='icon' />
+        {/* Use the handleEdit function to edit the contact */}
+        <AiFillEdit
+          size={20}
+          onClick={() => handleEdit(id)}
+          color='blue'
+          className='icon'
+        />
       </td>
       <td>
-        <AiFillDelete size={20}     onClick={() => {
+        {/* Use the dispatch function to delete the contact */}
+        <AiFillDelete
+          size={20}
+          onClick={() => {
             const confirmDelete = window.confirm(
               `Are you sure you want to delete contact for user ${firstName} ${lastName}?`
             );
@@ -29,9 +43,13 @@ const ContactItem: FC<Contact & ExtraProps> = ({ id, firstName, lastName, phoneN
                 payload: { id }
               });
             }
-          }} color='red' className='icon' />
+          }}
+          color='red'
+          className='icon'
+        />
       </td>
     </tr>
   );
 };
+
 export default ContactItem;
