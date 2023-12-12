@@ -17,6 +17,9 @@ This is a simple contact manager application built with React and TypeScript. It
     To delete a contact, click on the delete icon next to the contact's name and confirm the action when prompted.
     Any changes made to the contacts are automatically saved to the local storage.
 
+### Deploy to Microsoft Azure
+Refer this blog - https://medium.com/@janesfrontenddiary/how-to-deploy-a-vite-react-app-to-azure-app-service-using-ci-cd-pipelines-github-actions-1cee30d49ab0
+
 ### Contributing
 
 If you wish to contribute to this project, feel free to submit a pull request.
