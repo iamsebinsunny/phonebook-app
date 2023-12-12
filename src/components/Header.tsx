@@ -5,7 +5,7 @@ const Header: FC = () => {
   return (
     <header>
       <Container className="d-flex justify-content-center">
-        <h1>PhoneBook Application for Azure</h1>
+        <h1>PhoneBook Application</h1>
       </Container>
     </header>
   );

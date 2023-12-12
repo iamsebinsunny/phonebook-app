@@ -1,0 +1,76 @@
+
+
+This application is a simple contact manager built with React and TypeScript. It allows users to add, view, update, and delete their contacts. The application is styled using Bootstrap and custom CSS.
+
+Here is a brief overview of the main components and files:
+
+1. [`src/App.tsx`](command:_github.copilot.openRelativePath?%5B%22src%2FApp.tsx%22%5D "src/App.tsx"): This is the main component of the application. It renders the `ContactForm` and `ContactList` components and manages the state of the application.
+
+2. [`src/components/ContactForm.tsx`](command:_github.copilot.openRelativePath?%5B%22src%2Fcomponents%2FContactForm.tsx%22%5D "src/components/ContactForm.tsx"): This component renders a form that allows users to add a new contact or update an existing one. It takes in the dispatch function from the `App` component to dispatch actions to the reducer.
+
+3. [`src/components/ContactList.tsx`](command:_github.copilot.openRelativePath?%5B%22src%2Fcomponents%2FContactList.tsx%22%5D "src/components/ContactList.tsx"): This component renders a list of all contacts. It also takes in the dispatch function from the `App` component to dispatch actions to the reducer.
+
+4. [`src/components/EditModal.tsx`](command:_github.copilot.openRelativePath?%5B%22src%2Fcomponents%2FEditModal.tsx%22%5D "src/components/EditModal.tsx"): This component renders a modal that allows users to edit a contact's details.
+
+5. [`src/reducers/contactsReducer.ts`](command:_github.copilot.openRelativePath?%5B%22src%2Freducers%2FcontactsReducer.ts%22%5D "src/reducers/contactsReducer.ts"): This file contains the reducer function for the application. The reducer function takes in the current state and an action, and returns the new state based on the action type.
+
+6. [`src/types.ts`](command:_github.copilot.openRelativePath?%5B%22src%2Ftypes.ts%22%5D "src/types.ts"): This file contains the TypeScript interfaces and types used in the application.
+
+7. [`package.json`](command:_github.copilot.openRelativePath?%5B%22package.json%22%5D "package.json"): This file contains the list of dependencies and scripts for the application. You can start the application by running `npm run dev`, and build it for production by running `npm run build`.
+
+8. [`.github/workflows/main_phonebook-app.yml`](command:_github.copilot.openRelativePath?%5B%22.github%2Fworkflows%2Fmain_phonebook-app.yml%22%5D ".github/workflows/main_phonebook-app.yml"): This file contains the configuration for the GitHub Actions workflow. The workflow is set up to build and deploy the application to Azure Web App whenever changes are pushed to the master branch.
+
+9. [`README.md`](command:_github.copilot.openRelativePath?%5B%22README.md%22%5D "README.md"): This file contains instructions on how to install, use, and contribute to the application.
+
+10. [`tsconfig.json`](command:_github.copilot.openRelativePath?%5B%22tsconfig.json%22%5D "tsconfig.json"): This file contains the TypeScript compiler options for the application.
+
+To use the application, you can add a new contact by clicking on the "Add Contact" button and filling out the form. To view the details of a contact, simply click on the contact's name in the list. To edit a contact's details, click on the edit icon next to the contact's name and make the necessary changes in the form. To delete a contact, click on the delete icon next to the contact's name and confirm the action when prompted. Any changes made to the contacts are automatically saved to the local storage.
+
+For more detailed information, you can refer to the comments in the code and the [`README.md`](command:_github.copilot.openRelativePath?%5B%22README.md%22%5D "README.md") file.
+
+
+iamsebinsunny: @workspace  give me explanation and a detailed documentation on this applciation
+
+GitHub Copilot: This application is a simple contact manager built with React and TypeScript. It allows users to add, view, update, and delete their contacts. The application is styled using Bootstrap and custom CSS.
+
+Here is a brief overview of the main components and files:
+
+1. [`src/App.tsx`](command:_github.copilot.openRelativePath?%5B%22src%2FApp.tsx%22%5D "src/App.tsx"): This is the main component of the application. It renders the `ContactForm` and `ContactList` components and manages the state of the application.
+
+2. [`src/components/ContactForm.tsx`](command:_github.copilot.openRelativePath?%5B%22src%2Fcomponents%2FContactForm.tsx%22%5D "src/components/ContactForm.tsx"): This component renders a form that allows users to add a new contact or update an existing one. It takes in the dispatch function from the `App` component to dispatch actions to the reducer.
+
+3. [`src/components/ContactList.tsx`](command:_github.copilot.openRelativePath?%5B%22src%2Fcomponents%2FContactList.tsx%22%5D "src/components/ContactList.tsx"): This component renders a list of all contacts. It also takes in the dispatch function from the `App` component to dispatch actions to the reducer.
+
+4. [`src/components/EditModal.tsx`](command:_github.copilot.openRelativePath?%5B%22src%2Fcomponents%2FEditModal.tsx%22%5D "src/components/EditModal.tsx"): This component renders a modal that allows users to edit a contact's details.
+
+5. [`src/reducers/contactsReducer.ts`](command:_github.copilot.openRelativePath?%5B%22src%2Freducers%2FcontactsReducer.ts%22%5D "src/reducers/contactsReducer.ts"): This file contains the reducer function for the application. The reducer function takes in the current state and an action, and returns the new state based on the action type.
+
+6. [`src/types.ts`](command:_github.copilot.openRelativePath?%5B%22src%2Ftypes.ts%22%5D "src/types.ts"): This file contains the TypeScript interfaces and types used in the application.
+
+7. [`package.json`](command:_github.copilot.openRelativePath?%5B%22package.json%22%5D "package.json"): This file contains the list of dependencies and scripts for the application. You can start the application by running `npm run dev`, and build it for production by running `npm run build`.
+
+8. [`.github/workflows/main_phonebook-app.yml`](command:_github.copilot.openRelativePath?%5B%22.github%2Fworkflows%2Fmain_phonebook-app.yml%22%5D ".github/workflows/main_phonebook-app.yml"): This file contains the configuration for the GitHub Actions workflow. The workflow is set up to build and deploy the application to Azure Web App whenever changes are pushed to the master branch.
+
+9. [`README.md`](command:_github.copilot.openRelativePath?%5B%22README.md%22%5D "README.md"): This file contains instructions on how to install, use, and contribute to the application.
+
+10. [`tsconfig.json`](command:_github.copilot.openRelativePath?%5B%22tsconfig.json%22%5D "tsconfig.json"): This file contains the TypeScript compiler options for the application.
+
+To use the application, you can add a new contact by clicking on the "Add Contact" button and filling out the form. To view the details of a contact, simply click on the contact's name in the list. To edit a contact's details, click on the edit icon next to the contact's name and make the necessary changes in the form. To delete a contact, click on the delete icon next to the contact's name and confirm the action when prompted. Any changes made to the contacts are automatically saved to the local storage.
+
+For more detailed information, you can refer to the comments in the code and the [`README.md`](command:_github.copilot.openRelativePath?%5B%22README.md%22%5D "README.md") file.
+
+main fucntions used
+
+Based on the provided workspace structure and the active selection, here are the main functions used in the application:
+
+1. `main` function in [`main.tsx`](command:_github.copilot.openRelativePath?%5B%22src%2Fmain.tsx%22%5D "src/main.tsx"): This function is the entry point of the application. It renders the `App` component into the root element of the HTML document.
+
+2. `dispatch` function in [`ContactItem.tsx`](command:_github.copilot.openRelativePath?%5B%22src%2Fcomponents%2FContactItem.tsx%22%5D "src/components/ContactItem.tsx"): This function is also passed as a prop to the `ContactItem` component. It is used to dispatch actions to the reducer function in [`contactsReducer.ts`](command:_github.copilot.openRelativePath?%5B%22src%2Freducers%2FcontactsReducer.ts%22%5D "src/reducers/contactsReducer.ts"). The actions can be of different types, such as adding a new contact, updating an existing contact, or deleting a contact.
+
+3. `render` function in [`App.tsx`](command:_github.copilot.openRelativePath?%5B%22src%2FApp.tsx%22%5D "src/App.tsx"): This function is responsible for rendering the main layout of the application. It renders the `ContactForm` and `ContactList` components and passes the necessary props to them.
+
+4. `handleEdit` function in [`ContactItem.tsx`](command:_github.copilot.openRelativePath?%5B%22src%2Fcomponents%2FContactItem.tsx%22%5D "src/components/ContactItem.tsx"): This function is passed as a prop to the `ContactItem` component. It is used to handle the editing of a contact. When the edit icon is clicked, this function is called with the id of the contact to be edited.
+
+5. `reducer` function in [`contactsReducer.ts`](command:_github.copilot.openRelativePath?%5B%22src%2Freducers%2FcontactsReducer.ts%22%5D "src/reducers/contactsReducer.ts"): This function is used to manage the state of the application. It takes the current state and an action as arguments, and returns the new state based on the action type.
+
+These are the main functions used in the application. For more detailed information, you can refer to the comments in the code and the [`README.md`](command:_github.copilot.openRelativePath?%5B%22README.md%22%5D "README.md") file.
