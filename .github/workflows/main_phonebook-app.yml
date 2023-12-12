@@ -3,11 +3,11 @@
 
 name: Build and deploy Node.js app to Azure Web App - {name_of_your_app}
 
-# Run the workflow whenever change is pushed into the main branch
+# Run the workflow whenever change is pushed into the master branch
 on:
   push:
     branches:
-      - main
+      - master
   workflow_dispatch:
 
 # Optional: environment variables can be injected here
